@@ -26,6 +26,10 @@ body {
     background-color: var(--cinza);
 }
 
+.formulario{
+    display: none;
+}
+
 .Lista_container {
     height: 85%;
     background-color: var(--cinza);

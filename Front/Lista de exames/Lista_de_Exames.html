@@ -28,7 +28,13 @@
         </div>
     </div>
     <div class="Lista_container Caixa">
-        <ul class="Lista_exame">
+        <form class="formulario" id="forms">
+            <label for="Titulo">Tipo de Exame:</label><br>
+            <input type="text" id="Titulo" name="Titulo"><br>
+            <label for="Descrição">Descrição do Exame:</label><br>
+            <input type="text" id="Descrição" name="Descrição">
+        </form>
+        <ul class="Lista_exame" id="exams">
             <li class="Exame Caixa">
                 <p class="titulo">Endoscopia</p>
                 <p class="descrição"></p>
@@ -62,13 +68,14 @@
                 <p class="descrição"></p>
             </li>
         </ul>
-        <a href="#" class="float">
-            <i class="fa fa-plus my-float"></i>
-            </a>
+        <button onclick="togle()" class="float">
+            <i class="fa fa-plus my-float" id="floating"></i>
+        </button>
     </div>
     </div>
     <div class="footer">
         <ul class="footerButtns"></ul>
     </div>
+    <script src="Lista_De_Exames.js"></script>
 </body>
 </html>
