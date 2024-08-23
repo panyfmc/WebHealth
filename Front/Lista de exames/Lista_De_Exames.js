@@ -1,10 +1,8 @@
 var divExames = document.getElementById("exams")
 var divForms = document.getElementById("forms")
-var floating = document.getElementById("floating")
 var visible = true
 
 function togle() {
-    console.log("heyo");
     if (visible) {
         divExames.style.display = "none";
         divForms.style.display = "block"
@@ -15,3 +13,7 @@ function togle() {
         visible = true;
     }
 }
+
+$('.float').click(function(){
+    $(this).find('i').toggleClass('fa-plus fa-times')
+});

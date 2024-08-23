@@ -39,10 +39,12 @@ html{
 	border-radius:50px;
 	text-align:center;
 	box-shadow: 2px 2px 3px #999;
+    justify-content: center;
+    align-items: center;
 }
 
-.my-float{
-	margin-top:4px;
+.fa{
+    scale: 1.5;
 }
 
 button{

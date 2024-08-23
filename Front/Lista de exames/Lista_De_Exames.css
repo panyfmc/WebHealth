@@ -73,7 +73,16 @@ body {
 
 .float{
     margin-bottom: 2vh;
+    animation: none;
 }
+/*animation: mymove 2s;*/
+@keyframes toX {
+  50% {transform: rotate(45deg);}
+}
+
+@keyframes toPlus {
+    50% {transform: rotate(-45deg);}
+  }
 
 .footer {
     height: 5vh;
