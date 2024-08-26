@@ -29,11 +29,13 @@ body {
 
 #imgPerfil {
   display: flex;
+  align-items: center;
 }
 
 #imgPerfil img {
-  max-height: 9vh; 
+  max-height: 10vh; 
   height: auto; 
+  padding-right: 1.7vh;
 }
 
 .Menu {
@@ -46,14 +48,13 @@ body {
   border: 2px solid blue; 
   border-radius: 16px; 
   box-sizing: border-box; 
-  display: flex;
   flex-direction: column;
   height: 100%;
   list-style: none;
   overflow-y: scroll;
   overflow-x: hidden;
   gap: 2.5em;
-  padding: 5%;
+  padding: 2%;
 }
 
 .Exame {
@@ -61,7 +62,7 @@ body {
   padding: 10px 24px;
   box-shadow: 0px 4px 8px 0px #00000029;
   height: 18vh;
- 
+  margin: 3vh;
 }
 
 .Exame:hover{   /*aumenta o botão quando cursor passa por cima*/
