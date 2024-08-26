@@ -10,15 +10,43 @@
 </head>
 
 <body>
+    <!--<div class="header">
+        <div class="returnBttn">
+            <a href="../LandingPage/LandingPage.html">Retornar</a>
+        </div> --> 
     <div class="PageInicial">
         <div id="Txt"> 
             <p >👋 Hi Dr. Gygy! </p> 
         </div>
-
         <div id="imgPerfil"> 
             <img src="imgWH.png" alt="Imagem perfil do médico">
         </div>   
     </div>
-    
+
+    <div class="Menu">
+        <ul class="Lista_exame" id="exams">
+            <li class="Exame Caixa">
+                <p class="titulo">Scheduled Time</p>
+            </li>
+            <li class="Exame Caixa">
+                <p class="titulo">Patients</p>
+            </li>
+            <li class="Exame Caixa">
+                <p class="titulo">Feedbacks</p>
+            </li>
+            <li class="Exame Caixa">
+                <p class="titulo">In Process</p>
+            </li>
+        </ul>
+
+        <button onclick="togle()" class="float">
+            <i class="fa fa-plus" id="floating"></i>
+        </button>
+    </div>
+
+    <div class="footer">
+        <ul class="footerButtns"></ul>
+    </div>
+
 </body>
 </html>
