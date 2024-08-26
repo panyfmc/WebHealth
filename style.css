@@ -7,12 +7,9 @@ body {
   display: flex;
   /* superior | horizontal | inferior */
   padding: 2em 0 1em;
-  border: 2px solid black; 
-  border-radius: 16px; 
-  box-sizing: border-box; 
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  justify-content: space-between; /*espaçamento interno*/
+  flex-wrap: nowrap;   /*força o item a ficar na mesma linha*/
 }
 
 #Txt {
@@ -22,16 +19,77 @@ body {
 
 #Txt p {
   color: #4e3e7f;
+  padding-left: 1.5vh;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600; 
   margin-right: 19vh;
   white-space: nowrap;
-  font-size: larger;
+  font-size: xx-large;
+}
+
+#imgPerfil {
+  display: flex;
 }
 
 #imgPerfil img {
-  margin-right: 10px;
-  max-height: 8vh; 
+  max-height: 9vh; 
   height: auto; 
 }
 
+.Menu {
+  height: 85%;
+  background-color: var(--cinza);
+
+}
+
+.Lista_exame {
+  border: 2px solid blue; 
+  border-radius: 16px; 
+  box-sizing: border-box; 
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  list-style: none;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  gap: 2.5em;
+  padding: 5%;
+}
+
+.Exame {
+  background-color: #efe8f8;
+  padding: 10px 24px;
+  box-shadow: 0px 4px 8px 0px #00000029;
+  height: 18vh;
+ 
+}
+
+.Exame:hover{   /*aumenta o botão quando cursor passa por cima*/
+  scale: 1.02;
+}
+
+.titulo {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600; 
+  text-align: left;
+  padding-left: 3vh;
+  color: #4e3e7f;
+  font-size: x-large;
+}
+
+.float{
+  margin-bottom: 2vh;
+  animation: none;
+}
+/*animation: mymove 2s;*/
+@keyframes toX {
+50% {transform: rotate(45deg);}
+}
+
+@keyframes toPlus {
+  50% {transform: rotate(-45deg);}
+}
+
+.footer {
+  height: 5vh;
+}
