@@ -22,7 +22,7 @@ body {
   padding-left: 1.5vh;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600; 
-  margin-right: 19vh;
+  margin-right: 19px;
   white-space: nowrap;
   font-size: xx-large;
 }
@@ -39,17 +39,14 @@ body {
 }
 
 .Menu {
-  height: 85%;
+  height: 100vh;
   background-color: var(--cinza);
 
 }
 
 .Lista_exame {
-  border: 2px solid blue; 
-  border-radius: 16px; 
-  box-sizing: border-box; 
   flex-direction: column;
-  height: 100%;
+  height: 90vh;
   list-style: none;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -93,4 +90,31 @@ body {
 
 .footer {
   height: 5vh;
+}
+
+.Navbar {
+  border: 2px solid blue; 
+  border-radius: 16px; 
+  box-sizing: border-box; 
+  display: flex;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  display: flex;
+  padding-left: 3.5vh;
+  display: flex; /* Adiciona flexbox aos itens individuais */
+  align-items: center; /* Alinha os itens verticalmente no centro */
+  margin-right: 16vh; /* Espaço entre os ícones */
+  flex-wrap: nowrap;
+}
+
+.icon img {
+  display:flex;
+  max-height: 100vh; 
+  height: auto; 
 }
