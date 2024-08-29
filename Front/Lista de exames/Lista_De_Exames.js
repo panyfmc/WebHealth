@@ -46,7 +46,7 @@ function addElement() {
   var descri = document.createElement("p");
 
   parag.classList.add("titulo");
-  descri.classList.add("descrição");
+  descri.classList.add("descricao");
 
   parag.appendChild(tituloTXT);
   descri.appendChild(descricaoTXT);

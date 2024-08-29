@@ -24,6 +24,8 @@ body {
     height: 100%;
     width: 100%;
     background-color: var(--cinza);
+    display: flex;
+    flex-direction: row;
 }
 
 .formulario{
@@ -54,7 +56,7 @@ body {
     padding: 10px 24px;
     box-shadow: 0px 4px 8px 0px #00000029;
     height: 18vh;
-    overflow: scroll;
+    overflow: scroll;   
 }
 
 .Exame:hover{
@@ -151,4 +153,35 @@ textarea:focus{
     width: 50%;
     height: 7%;
     border-radius: 5vh;
+}
+
+
+.foto{
+    height: 100%;
+    width: auto;
+    border-radius: 15vh;
+}
+
+.Paciente_foto{
+    width: auto;
+    height: 100%;
+    padding: 1vh;
+}
+
+.Paciente_info{
+    width: 80%;
+    height: 100%;
+    padding: 1vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.Paciente_info .titulo{
+    font-weight:800 !important;
+    font-size: larger;
+}
+
+.Paciente_info .descricao{
+    font-size: 1.5vh;
+    font-weight: bold;
 }
