@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebHealth</title>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.css">
+
+    <link rel="stylesheet" href="Lista_De_Exames.css" type="text/css"/>
+    <link rel="stylesheet" href="../Geral.css" type="text/css"/>
+
+</head>
+<body>
+    <div class="header">
+        <div class="returnBttn">
+            <a href="../LandingPage/LandingPage.html">Retornar</a>
+        </div>
+    </div>
+    <div class="PageContent">
+    <div class="Paciente_container">
+        <div class="Pc Caixa">
+            <div class="Paciente_info">
+                <p class="titulo">Rafael Prata</p>
+                <div class="pacienteDados">
+                    <p class="descricao">Convenio: Unimed</p>
+                    <p class="descricao">Idade: 20 anos</p>
+                    <p class="descricao">Alergias: Nenhuma</p>
+                    <p class="descricao">Sintomas: Paciente reclamando de fortes dores na coluna</p>
+                </div>
+            </div>
+            <div class="Paciente_foto">
+                <img src="../imagens/rafael.png" alt="imagem de perfil do paciente" class="foto" width="10px" height="10px">
+            </div>
+        </div>
+    </div>
+    <div class="Lista_container Caixa">
+        <form class="formulario" id="forms">
+            <label for="Titulo">Tipo de Exame:</label><br>
+            <input type="text" id="Titulo" name="Titulo"><br>
+            <label for="descricao">Descrição do Exame:</label><br>
+            <textarea name="paragraph_text" cols="50" rows="10" id="descricao"></textarea>
+            <button class="subButton" name="data" type="button" onclick="addElement()">Submeter</button>
+        </form>
+        <ul class="Lista_exame" id="exams">
+            <li class="Exame Caixa">
+                <p class="titulo">Endoscopia</p>
+                <p class="descricao">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </li>
+            <li class="Exame Caixa">
+                <p class="titulo">Raio-x</p>
+                <p class="descricao">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </li>
+            <li class="Exame Caixa">
+                <p class="titulo">Raio-x</p>
+                <p class="descricao">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </li>
+            <li class="Exame Caixa">
+                <p class="titulo">Raio-x</p>
+                <p class="descricao">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </li>
+            <li class="Exame Caixa">
+                <p class="titulo">Raio-x</p>
+                <p class="descricao">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </li>
+            <li class="Exame Caixa">
+                <p class="titulo">Raio-x</p>
+                <p class="descricao">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </li>
+            <li class="Exame Caixa">
+                <p class="titulo">Raio-x</p>
+                <p class="descricao">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </li>
+            <li class="Exame Caixa">
+                <p class="titulo">Raio-x</p>
+                <p class="descricao">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </li>
+        </ul>
+        <button onclick="togle()" class="float" id="floatbuttnfloat">
+            <i class="fa fa-plus" id="floating"></i>
+        </button>
+    </div>
+    </div>
+    <div class="footer">
+        <ul class="footerButtns"></ul>
+    </div>
+    <script src="Lista_De_Exames.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  background-color: var(--branco);
+}
+
+html{
+    height: 100%;
+}
+
+:root {
+    --cinza: #EDECF4;
+    --branco: #ffffff;
+    --amarelo: #FEC62F;
+    --roxo: #432C81;
+    --roxoClaro:  #7B6BA8;
+}
+
+.Caixa{
+    border-radius: 12px;
+}
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:20px;
+	background-color:var(--amarelo);
+	color: var(--roxo);
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa{
+    scale: 1.7;
+}
+
+button{
+    border: none;
+}

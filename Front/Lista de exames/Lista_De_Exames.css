@@ -1,0 +1,192 @@
+body {
+    height: 100vh;
+}
+
+.header {
+    width: 100%;
+    height: 5vh;
+}
+
+.PageContent {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.Paciente_container {
+    width: 100%;
+    height: 15%;
+    padding: 0 12px 0 12px
+}
+
+.Pc {
+    height: 100%;
+    width: 100%;
+    background-color: var(--cinza);
+    display: flex;
+    flex-direction: row;
+}
+
+.formulario{
+    display: none;
+}
+
+.Lista_container {
+    height: 85%;
+    background-color: var(--cinza);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-radius: 16px !important;
+}
+
+.Lista_exame {
+    display: grid;
+    grid-template-columns: 47% 47%;
+    height: 100%;
+    list-style: none;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    gap: 5%;
+    padding: 5%;
+}
+
+.Exame {
+    background-color: white;
+    padding: 10px 24px;
+    box-shadow: 0px 4px 8px 0px #00000029;
+    height: 18vh;
+    overflow: scroll;   
+}
+
+.Exame:hover{
+    scale: 1.02;
+}
+
+.titulo {
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: -0.5px;
+    text-align: center;
+    color: #432C81;
+}
+
+.float{
+    margin-bottom: 2vh;
+}
+
+.animate-hi {
+    animation: toX 1s forwards;
+  }
+  
+  .animate-hi-reverse {
+    animation: toPlus 1s forwards;
+  }
+
+/*animation: mymove 2s;*/
+@keyframes toX {
+  100% {transform: rotate(45deg);}
+}
+
+@keyframes toPlus {
+    0% {transform: rotate(45deg);}
+    100% {transform: rotate(0deg);}
+  }
+
+.footer {
+    height: 5vh;
+}
+
+form{
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    font-size: 3.5vh;
+    margin: 2vh  0 2vh 0;
+}
+
+input{
+    border-radius: 5vh;
+    border: none;
+    width: 80%;
+    height: 7vh;
+    padding: 2vh;
+}
+
+#Descrição{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    color: var(--roxoClaro);
+}
+
+textarea{
+    border-radius: 5vh;
+    border: none;
+    width: 80%;
+    padding: 2.5vh;
+    margin: 2vh;
+    font-size: 2.5vh;
+}
+
+label{
+    font-weight: bold;
+    color: var(--roxo);
+}
+input{
+    margin: 2vh;
+    font-size: larger;
+}
+input[type=text]:focus {
+    outline-color: var(--amarelo);
+}
+
+textarea:focus{
+    outline-color: var(--amarelo);
+}
+
+.subButton{
+    background-color: var(--amarelo);
+    font-size: large;
+    font-weight: bold;
+    width: 50%;
+    height: 7%;
+    border-radius: 5vh;
+}
+
+
+.foto{
+    height: 100%;
+    width: auto;
+    border-radius: 15vh;
+}
+
+.Paciente_foto{
+    width: auto;
+    height: 100%;
+    padding: 1vh;
+}
+
+.Paciente_info{
+    width: 80%;
+    height: 100%;
+    padding: 1vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.Paciente_info .titulo{
+    font-weight:800 !important;
+    font-size: larger;
+}
+
+.Paciente_info .descricao{
+    font-size: 1.5vh;
+    font-weight: bold;
+}
+
+.descricao{
+    font-size:small;
+    font-weight:600;
+}
