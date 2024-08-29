@@ -15,5 +15,21 @@ function togle() {
 }
 
 $('.float').click(function(){
-    $(this).find('i').toggleClass('fa-plus fa-times')
+    //$(this).find('i').toggleClass('fa-plus fa-times')
 });
+
+function animateButton() {
+    var button = $('.float');
+    if (button.hasClass('animate-hi')) {
+      button.removeClass('animate-hi').addClass('animate-hi-reverse');
+    } else if (button.hasClass('animate-hi-reverse')) {
+      button.removeClass('animate-hi-reverse').addClass('animate-hi');
+    } else {
+      button.addClass('animate-hi');
+    }
+  };
+  $(document).ready(function() {
+    $('.float').on("click", function() {
+      animateButton();
+    });
+  });

@@ -36,7 +36,6 @@ body {
     overflow-y: scroll;
     overflow-x: hidden;
     border-radius: 16px !important;
-
 }
 
 .Lista_exame {
@@ -55,6 +54,7 @@ body {
     padding: 10px 24px;
     box-shadow: 0px 4px 8px 0px #00000029;
     height: 18vh;
+    overflow: scroll;
 }
 
 .Exame:hover{
@@ -73,17 +73,79 @@ body {
 
 .float{
     margin-bottom: 2vh;
-    animation: none;
 }
+
+.animate-hi {
+    animation: toX 1s forwards;
+  }
+  
+  .animate-hi-reverse {
+    animation: toPlus 1s forwards;
+  }
+
 /*animation: mymove 2s;*/
 @keyframes toX {
-  50% {transform: rotate(45deg);}
+  100% {transform: rotate(45deg);}
 }
 
 @keyframes toPlus {
-    50% {transform: rotate(-45deg);}
+    0% {transform: rotate(45deg);}
+    100% {transform: rotate(0deg);}
   }
 
 .footer {
     height: 5vh;
+}
+
+form{
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    font-size: 3.5vh;
+    margin: 2vh  0 2vh 0;
+}
+
+input{
+    border-radius: 5vh;
+    border: none;
+    width: 80%;
+    height: 7vh;
+    padding: 2vh;
+}
+
+#Descrição{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    color: var(--roxoClaro);
+}
+
+textarea{
+    border-radius: 5vh;
+    border: none;
+    width: 80%;
+    padding: 2.5vh;
+    margin: 2vh;
+    font-size: 2.5vh;
+}
+
+label{
+    font-weight: bold;
+    color: var(--roxo);
+}
+input{
+    margin: 2vh;
+    font-size: larger;
+}
+input[type=text]:focus {
+    outline-color: var(--amarelo);
+}
+
+textarea:focus{
+    outline-color: var(--amarelo);
+}
+
+.subButton{
+    background-color: var(--amarelo);
+    font-size: large;
+    font-weight: bold;
 }
