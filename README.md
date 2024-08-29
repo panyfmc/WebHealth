@@ -5,7 +5,8 @@
 ## Descrição
 
 Este repositório contém o resultado de um trabalho em dupla, cujo objetivo é apresentar um projeto inicial utilizando exclusivamente HTML, CSS e JavaScript. O projeto foi desenvolvido a partir da escolha de dois requisitos funcionais e, pelo menos, um requisito não-funcional. A implementação segue de forma fiel o protótipo inserido pelo criador do WebHealth Rafael Prata, com algumas pequenas alterações devido a limitações de recursos. 
-Dupla responsável pela implementação da página web: Alípio e Paula
+
+"Dupla responsável pela implementação da página web: Alípio e Paula"
 
 A seleção dos requisitos foi feita com base nas prioridades atuais do autor, priorizando praticidade e o cumprimento do objetivo geral da atividade.
 
