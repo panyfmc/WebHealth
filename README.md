@@ -4,6 +4,13 @@
 
 ## Descrição
 
+Este repositório contém o resultado de um trabalho em dupla, cujo objetivo é apresentar um projeto inicial utilizando exclusivamente HTML, CSS e JavaScript. O projeto foi desenvolvido a partir da escolha de dois requisitos funcionais e, pelo menos, um requisito não-funcional. A implementação segue de forma fiel o protótipo inserido pelo criador do WebHealth Rafael Prata, com algumas pequenas alterações devido a limitações de recursos. 
+Dupla responsável pela implementação da página web: Alípio e Paula
+
+A seleção dos requisitos foi feita com base nas prioridades atuais do autor, priorizando praticidade e o cumprimento do objetivo geral da atividade.
+
+*Segue o fluxo*
+
 O **WebHealth** é uma aplicação web projetada para facilitar o atendimento na área médica, permitindo a automação da criação e armazenamento de pedidos médicos de exames clínicos. Esta ferramenta será utilizada por médicos para gerenciar informações de exames de forma eficiente, associando-as ao número de protocolo do paciente.
 
 
@@ -19,14 +26,5 @@ O **WebHealth** é uma aplicação web projetada para facilitar o atendimento na
 
 - **Tecnologias Utilizadas:**  
   O desenvolvimento da ferramenta deve ser realizado utilizando exclusivamente HTML, CSS e JavaScript.
-
-
-
-### Comentários
-
-Esse repositório apresenta o resultado de um trabalho em dupla que visa apresentar um projeto inicialmente, utilizando exclusivamente HTML, CSS E JS. Além da escolha livre em 2 requisitos funcionais e ao menos 1 não-funcional. A apresentação dele segue fielmente ao protótipo introduzido pelo criador original do projeto, levando em consideração pequenas mudanças por falta de recursos para execução. Esse projeto tem por criador Rafael Prata. 
-Dupla responsável pela iniciação da página web: Alípio e Paula. 
-
-A escolha dos requisitos teve em acordo com qual era a prioridade do autor no presente momento. Praticidade e que satisfazesse o objetivo geral da atividade.
 
 ---
