@@ -2,7 +2,7 @@ var divExames = document.getElementById("exams")
 var divForms = document.getElementById("forms")
 var visible = true
 
-function togle() {
+function togle() { // Função que abri ou fecha o formulário
     if (visible) {
         divExames.style.display = "none";
         divForms.style.display = "block"
@@ -14,11 +14,11 @@ function togle() {
     }
 }
 
-$('.float').click(function(){
+$('.float').click(function(){ // Função alternativa para alteraro icone caso não queira usar a animação
     //$(this).find('i').toggleClass('fa-plus fa-times')
 });
 
-function animateButton() {
+function animateButton() {  //Função que toca a animação de transformar o + no x e vice-versa
     var button = $('.float');
     if (button.hasClass('animate-hi')) {
       button.removeClass('animate-hi').addClass('animate-hi-reverse');
@@ -35,16 +35,32 @@ function animateButton() {
   });
 
 function addElement() {
-  // create a new div element
-  const newDiv = document.createElement("div");
+  var tituloInput = document.getElementById("Titulo");        ////
+  var descricaoInput = document.getElementById("Descrição");  //
+  var tituloExame = tituloInput.value;                        //Esse bloco pega os valores das caixas de input 
+  var descricaoExame = descricaoInput.value;                  //
+  var tituloTXT = document.createTextNode(tituloExame);       //
+  var descricaoTXT = document.createTextNode(descricaoExame); ////
 
-  // and give it some content
-  const newContent = document.createTextNode("Hi there and greetings!");
+  var parag = document.createElement("p");
+  var descri = document.createElement("p");
 
-  // add the text node to the newly created div
-  newDiv.appendChild(newContent);
+  parag.classList.add("titulo");
+  descri.classList.add("descrição");
 
-  // add the newly created element and its content into the DOM
-  const currentDiv = document.getElementById("exams");
-  document.body.insertBefore(newDiv, currentDiv);
+  parag.appendChild(tituloTXT);
+  descri.appendChild(descricaoTXT);
+
+  var ul = document.getElementById("exams");
+  var li = document.createElement("li");
+
+  li.classList.add("Exame");
+  li.classList.add("Caixa");
+
+  li.appendChild(parag);
+  li.appendChild(descri);
+
+  ul.appendChild(li);
+
+  togle();
 }

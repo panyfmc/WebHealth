@@ -148,4 +148,7 @@ textarea:focus{
     background-color: var(--amarelo);
     font-size: large;
     font-weight: bold;
+    width: 50%;
+    height: 7%;
+    border-radius: 5vh;
 }
