@@ -185,3 +185,8 @@ textarea:focus{
     font-size: 1.5vh;
     font-weight: bold;
 }
+
+.descricao{
+    font-size:small;
+    font-weight:600;
+}

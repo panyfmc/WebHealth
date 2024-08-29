@@ -36,8 +36,8 @@ function animateButton() {  //Função que toca a animação de transformar o + 
 
 function addElement() {
   var tituloInput = document.getElementById("Titulo");        ////
-  var descricaoInput = document.getElementById("Descrição");  //
-  var tituloExame = tituloInput.value;                        //Esse bloco pega os valores das caixas de input 
+  var descricaoInput = document.getElementById("descricao");  //
+  var tituloExame = tituloInput.value;                        //Esse bloco pega os valores das caixas de input
   var descricaoExame = descricaoInput.value;                  //
   var tituloTXT = document.createTextNode(tituloExame);       //
   var descricaoTXT = document.createTextNode(descricaoExame); ////
