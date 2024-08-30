@@ -1,5 +1,3 @@
----
-
 # WebHealth - Protótipo Inicial
 
 ## Descrição
@@ -27,5 +25,3 @@ O **WebHealth** é uma aplicação web projetada para facilitar o atendimento na
 
 - **Tecnologias Utilizadas:**  
   O desenvolvimento da ferramenta deve ser realizado utilizando exclusivamente HTML, CSS e JavaScript.
-
----
